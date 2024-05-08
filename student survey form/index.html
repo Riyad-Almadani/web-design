@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey help me to improve this form, thank you for your time.</p>
+    <form id="survey-form">
+    <label id="name-label">Name</label><input id="name" type="text" required name="name" placeholder="Enter your name">
+     <label id="email-label">Email</label>  <input id="email" type="email" required name="email" placeholder="Enter your email">
+   <label id="number-label">Number</label>     <input id="number" type="number" required name="number" min="1" max="10" placeholder="Number">
+   <select id="dropdown">
+      <option value="male">Male</option>
+       <option value="female">Female</option>
+   </select>
+   <label name="country">US
+     <input name="county" type="radio">
+   </label>
+   <label name="other">Other
+     <input name="other" type="radio">
+   </label>
+   <label>Agree<input value="choice" type="checkbox"></lable>
+   <label>Not Agree<input value="choice" type="checkbox"></lable>
+    <label for="comment">Comment:
+          <textarea
+            name="bio"
+            id="bio"
+            rows="3"
+            cols="30"
+            placeholder="Give us your comment...."></textarea>
+        </label>
+  <input type="submit" value="Submit">
+    </form>
+  </body>
+</thml>

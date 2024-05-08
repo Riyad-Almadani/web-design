@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Form styles */
+#survey-form {
+  padding: 20px;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: calc(100% - 24px); /* Adjust for border and padding */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding-right: 30px;
+}
+
+/* Button styles */
+#survey-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#survey-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Textarea styles */
+textarea {
+  width: calc(100% - 24px); /* Adjust for border and padding */
+  resize: vertical;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Add space between label and checkbox */
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
